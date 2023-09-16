@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en"data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+ <title>Skinssence</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar bg-green-200">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-5xl">Skinssence</a>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="badge badge-sm indicator-item">12</span>
+                  </div>
+                </label>
+                <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                  <div class="card-body">
+                    <span class="font-bold text-lg">12 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="https://i.ibb.co/wQD7zsp/skinssence.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>      
+    </header>
+
+    <main>
+        <h1 class="text-5xl text-center mt-3 font-bold" >Toner</h1>
+        <section class="grid grid-cols-1 gap-3  md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+            <div>
+              <!-- cart 1 -->
+              <div class="card w-96 bg-base-100  shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img  src="img/61a2d38886dd20120f353074dd70021c.jpg" alt="Shoes" class="rounded-xl w-full" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Simple</h2>
+                  <p> <span class="text-gray-500" >Price:</span> 399$</p>
+                  <div class="rating gap-1">
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+                    <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                  </div>
+                  <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+                  <div class="card-actions">
+                    <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal">
+                      <form method="dialog" class="modal-box text-center m-8">
+                       <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                      <h2 class="font-bold text-3xl">Congratulations</h2>
+                      <p class="text-2xl" >Your Purchase the product</p>
+                        <div class="modal-action">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn mx-44 ">Go Home</button>
+                        </div>
+                      </form>
+                    </dialog>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+                <!-- cart 2 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img  src="img/toner2.jpg" alt="Shoes" class="rounded-xl w-full" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Paulas Choice</h2>
+                    <p> <span class="text-gray-500" >Price:</span> 399$</p>
+                    <div class="rating gap-1">
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+                      <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                    </div>
+                    <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+                    <div class="card-actions">
+                      <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+                      <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box text-center m-8">
+                         <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                        <h2 class="font-bold text-3xl">Congratulations</h2>
+                        <p class="text-2xl" >Your Purchase the product</p>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn mx-44 ">Go Home</button>
+                          </div>
+                        </form>
+                      </dialog>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div>
+            <!-- cart 3 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img  src="img/toner3.jpg" alt="Shoes" class="rounded-xl w-full" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Laroche Posay</h2>
+                <p> <span class="text-gray-500" >Price:</span> 399$</p>
+                <div class="rating gap-1">
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                </div>
+                <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+                <div class="card-actions">
+                  <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box text-center m-8">
+                     <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                    <h2 class="font-bold text-3xl">Congratulations</h2>
+                    <p class="text-2xl" >Your Purchase the product</p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn mx-44 ">Go Home</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+
+          </div>
+  </section>
+
+  <h1 class="text-5xl text-center mt-3 font-bold" >Eye cream</h1>
+  <section class="grid grid-cols-1 gap-3 md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+    <div>
+      <!-- cart 1 -->
+      <div class="card w-96 bg-base-100  shadow-xl">
+        <figure class="px-10 pt-10">
+          <img  src="img/eye1.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Cerave</h2>
+          <p> <span class="text-gray-500" >Price:</span> 277$</p>
+          <div class="rating gap-1">
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+          </div>
+          <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+          <div class="card-actions">
+            <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box text-center m-8">
+               <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+              <h2 class="font-bold text-3xl">Congratulations</h2>
+              <p class="text-2xl" >Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn mx-44 ">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img  src="img/eye2.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">C-Tango</h2>
+            <p> <span class="text-gray-500" >Price:</span> 339$</p>
+            <div class="rating gap-1">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+            </div>
+            <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+            <div class="card-actions">
+              <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box text-center m-8">
+                 <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                <h2 class="font-bold text-3xl">Congratulations</h2>
+                <p class="text-2xl" >Your Purchase the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mx-44 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div>
+    <!-- cart 3 -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img  src="img/eye3.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">EIF</h2>
+        <p> <span class="text-gray-500" >Price:</span> 319$</p>
+        <div class="rating gap-1">
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+        </div>
+        <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+        <div class="card-actions">
+          <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box text-center m-8">
+             <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+            <h2 class="font-bold text-3xl">Congratulations</h2>
+            <p class="text-2xl" >Your Purchase the product</p>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mx-44 ">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<h1 class="text-5xl text-center mt-3 font-bold" >Face Cream</h1>
+
+<section class="grid grid-cols-1 gap-3 md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+    <div>
+      <!-- cart 1 -->
+      <div class="card w-96 bg-base-100  shadow-xl">
+        <figure class="px-10 pt-10">
+          <img  src="img/face1.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Ectaphil</h2>
+          <p> <span class="text-gray-500" >Price:</span> 477$</p>
+          <div class="rating gap-1">
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+          </div>
+          <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+          <div class="card-actions">
+            <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box text-center m-8">
+               <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+              <h2 class="font-bold text-3xl">Congratulations</h2>
+              <p class="text-2xl" >Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn mx-44 ">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img  src="img/face2.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Pond'S</h2>
+            <p> <span class="text-gray-500" >Price:</span> 369$</p>
+            <div class="rating gap-1">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+            </div>
+            <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+            <div class="card-actions">
+              <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box text-center m-8">
+                 <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                <h2 class="font-bold text-3xl">Congratulations</h2>
+                <p class="text-2xl" >Your Purchase the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mx-44 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div>
+    <!-- cart 3 -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img  src="img/face3.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Ectaphil_Moisturizing</h2>
+        <p> <span class="text-gray-500" >Price:</span> 339$</p>
+        <div class="rating gap-1">
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+        </div>
+        <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+        <div class="card-actions">
+          <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box text-center m-8">
+             <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+            <h2 class="font-bold text-3xl">Congratulations</h2>
+            <p class="text-2xl" >Your Purchase the product</p>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mx-44 ">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<h1 class="text-5xl text-center mt-3 font-bold" >Micellar Water</h1>
+<section class="grid grid-cols-1 gap-3 md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+    <div>
+      <!-- cart 1 -->
+      <div class="card w-96 bg-base-100  shadow-xl">
+        <figure class="px-10 pt-10">
+          <img  src="img/water1.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Garnler Micellar</h2>
+          <p> <span class="text-gray-500" >Price:</span> 477$</p>
+          <div class="rating gap-1">
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+          </div>
+          <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+          <div class="card-actions">
+            <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box text-center m-8">
+               <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+              <h2 class="font-bold text-3xl">Congratulations</h2>
+              <p class="text-2xl" >Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn mx-44 ">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img  src="img/water2.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Garnler Micellar</h2>
+            <p> <span class="text-gray-500" >Price:</span> 239$</p>
+            <div class="rating gap-1">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+            </div>
+            <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+            <div class="card-actions">
+              <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box text-center m-8">
+                 <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                <h2 class="font-bold text-3xl">Congratulations</h2>
+                <p class="text-2xl" >Your Purchase the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mx-44 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div>
+    <!-- cart 3 -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img  src="img/water3.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Garnler Micellar</h2>
+        <p> <span class="text-gray-500" >Price:</span> 199$</p>
+        <div class="rating gap-1">
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+        </div>
+        <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+        <div class="card-actions">
+          <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box text-center m-8">
+             <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+            <h2 class="font-bold text-3xl">Congratulations</h2>
+            <p class="text-2xl" >Your Purchase the product</p>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mx-44 ">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<h1 class="text-5xl text-center mt-3 font-bold" >Facewash</h1>
+<section class="grid grid-cols-1 gap-3 md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+    <div>
+      <!-- cart 1 -->
+      <div class="card w-96 bg-base-100  shadow-xl">
+        <figure class="px-10 pt-10">
+          <img  src="img/Facewash2.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">CeraVe</h2>
+          <p> <span class="text-gray-500" >Price:</span> 477$</p>
+          <div class="rating gap-1">
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+          </div>
+          <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+          <div class="card-actions">
+            <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box text-center m-8">
+               <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+              <h2 class="font-bold text-3xl">Congratulations</h2>
+              <p class="text-2xl" >Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn mx-44 ">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img  src="img/Facewash1.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"> HimalayaPro</h2>
+            <p> <span class="text-gray-500" >Price:</span> 999$</p>
+            <div class="rating gap-1">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+            </div>
+            <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+            <div class="card-actions">
+              <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box text-center m-8">
+                 <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                <h2 class="font-bold text-3xl">Congratulations</h2>
+                <p class="text-2xl" >Your Purchase the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mx-44 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div>
+    <!-- cart 3 -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img  src="img/Facewash3.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">CeraVe</h2>
+        <p> <span class="text-gray-500" >Price:</span> 199$</p>
+        <div class="rating gap-1">
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+        </div>
+        <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+        <div class="card-actions">
+          <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box text-center m-8">
+             <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+            <h2 class="font-bold text-3xl">Congratulations</h2>
+            <p class="text-2xl" >Your Purchase the product</p>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mx-44 ">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<h1 class="text-5xl text-center mt-3 font-bold" >Lip Mask</h1>
+
+<section class="grid grid-cols-1 gap-3 md:grid-cols-2 shadow-lg lg:grid-cols-3 m-6  ml-16" >
+          
+    <div>
+      <!-- cart 1 -->
+      <div class="card w-96 bg-base-100  shadow-xl">
+        <figure class="px-10 pt-10">
+          <img  src="img/lip1.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title"> Plumping Lip Mask</h2>
+          <p> <span class="text-gray-500" >Price:</span> 466$</p>
+          <div class="rating gap-1">
+            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+            <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+          </div>
+          <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+          <div class="card-actions">
+            <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box text-center m-8">
+               <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+              <h2 class="font-bold text-3xl">Congratulations</h2>
+              <p class="text-2xl" >Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn mx-44 ">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+        <!-- cart 2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img  src="img/lip2.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"> Lip Plumping Mask</h2>
+            <p> <span class="text-gray-500" >Price:</span> 350$</p>
+            <div class="rating gap-1">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+              <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+            </div>
+            <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+            <div class="card-actions">
+              <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box text-center m-8">
+                 <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+                <h2 class="font-bold text-3xl">Congratulations</h2>
+                <p class="text-2xl" >Your Purchase the product</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mx-44 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div>
+    <!-- cart 3 -->
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img  src="img/lip3.jpg" alt="Shoes" class="rounded-xl h-72 w-full" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Lip Sleeping Mask</h2>
+        <p> <span class="text-gray-500" >Price:</span> 299$</p>
+        <div class="rating gap-1">
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+        </div>
+        <p>Skinssence Laser and Skincare Clinic in Talwandi, Kota is a premier destination for those seeking top-quality skin treatments. We have been in this field of Cosmetic Dermatology for more than 10 years & have treated more than 20,000 patients.</p>
+        <div class="card-actions">
+          <button  class=" rounded p-1 disabled:bg-red-200 text-white bg-[#ec7676] w-full mt-5" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box text-center m-8">
+             <p class="text-center mx-36"> <img src="https://i.ibb.co/Z8jD0sv/pngtree-congratulations-with-clap-icon-png-image-9168959.png" alt=""></p>
+            <h2 class="font-bold text-3xl">Congratulations</h2>
+            <p class="text-2xl" >Your Purchase the product</p>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn mx-44 ">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+
+    
+
+    <footer class="  grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4 p-10 bg-base-200 ">
+        <div>
+        <img class="w-16 h-14 rounded-lg" src="https://i.ibb.co/wQD7zsp/skinssence.jpg" alt="">
+          <p>Skinssence SHOP Ltd.<br/>Providing reliable tech since 2023</p>
+        </div> 
+        <div>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a> <br>
+          <a class="link link-hover">Design</a> <br>
+          <a class="link link-hover">Marketing</a> <br>
+          <a class="link link-hover">Advertisement</a>
+        </div> 
+        <div>
+          <header class="footer-title">Contacts</header> 
+          <a href="https://www.facebook.com/profile.php?id=100068266610863">Facebook</a> <br>
+          <a href="01793609023">Phone</a> <br>
+
+          <a href="https://www.instagram.com/s_u_r_u__08/">instagram</a>
+          
+        </div> 
+        <div>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a> <br>
+          <a class="link link-hover">Privacy policy</a> <br>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+      </footer>
+
+
+</body>
+</html>
+
